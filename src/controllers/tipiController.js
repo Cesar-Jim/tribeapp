@@ -1,4 +1,4 @@
-const tipiQueries = require("../db/queries.tipis");
+const tipiQueries = require("../db/queries.tipis.js");
 
 module.exports = {
   index(req, res, next) {
