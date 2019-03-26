@@ -1,0 +1,11 @@
+{
+  "name": "tribeapp",
+  "version": "1.0.0",
+  "description": "A family chat\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[Cprivate family chat",
+  "main": "src/server.js",
+  "scripts": {
+    "test": "set NODE_ENV=test&& jasmine"
+  },
+  "author": "Cesar Jimenez",
+  "license": "ISC"
+}
