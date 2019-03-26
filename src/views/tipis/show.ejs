@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <% include ../static/partials/head.ejs %>
+  </head>
+  <body>
+    <% include ../static/partials/navbar.ejs %>
+
+    <main class="container">
+      <h1><%= tipi.name %></h1>
+
+      <p><%= tipi.description %></p>
+
+      <a href="/tipis/<%= tipi.id %>/edit" class="btn btn-warning">Edit</a>
+
+      <form
+        style="display:initial"
+        action="/tipis/<%= tipi.id %>/destroy"
+        method="post"
+      >
+        <button type="submit" class="btn btn-danger">Delete</button>
+      </form>
+
+      <textarea rows="10" cols="40">
+         This is the message board...
+      </textarea>
+
+      <form action="/action_page.php">
+        <label for="message">Message:</label>
+        <input
+          type="text"
+          class="form-control"
+          name="message"
+          aria-describedby="messageHelp"
+          placeholder="Type a message"
+        />
+        <button type="submit" class="btn btn-primary">>>></button>
+      </form>
+    </main>
+
+    <% include ../static/partials/baseScripts.ejs %>
+  </body>
+</html>
