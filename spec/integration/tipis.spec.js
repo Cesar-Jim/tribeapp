@@ -70,6 +70,27 @@ describe("routes : tipis", () => {
           });
       });
     });
+
+    it("should not create a new tipi that fails validations", done => {
+      const options = {
+        url: `${base}create`,
+        form: {
+          title: "x",
+          description: "y"
+        }
+      };
+      request.post(options, (err, res, body) => {
+        Tipi.findOne({ where: { name: "x" } })
+          .then(tipi => {
+            expect(tipi).toBeNull();
+            done();
+          })
+          .catch(err => {
+            console.log(err);
+            done();
+          });
+      });
+    });
   });
 
   describe("GET /tipis/:id", () => {
