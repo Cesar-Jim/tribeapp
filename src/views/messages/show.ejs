@@ -1,0 +1,18 @@
+<% if(message) { %>
+<div style="width: 50%">
+  <hr />
+  <small class="card-subtitle mb-2 text-muted">
+    <!-- Logic to extract and format DATE-->
+    <%= message.User.name %>
+  </small>
+  <small class="card-subtitle mb-2 text-muted">
+    <!-- Logic to extract and format DATE-->
+    <% let originalDate = (message.createdAt).toString() %> <% let formattedDate
+    = ""; %> <% for(let i = 16; i <= 20; i++) { %> <% formattedDate +=
+    originalDate[i]; %> <% } %> @ <%= formattedDate %>
+  </small>
+  <p>
+    <%= message.body %>
+  </p>
+</div>
+<% } %>

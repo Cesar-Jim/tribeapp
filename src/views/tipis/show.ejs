@@ -20,6 +20,19 @@
       >
         <button type="submit" class="btn btn-danger">Delete</button>
       </form>
+
+      <!-- Message Form -->
+      <section id="message-form">
+        <% if(currentUser) { %> <% include ../messages/new.ejs %> <% } %>
+      </section>
+      <!-- Ends Message Form -->
+
+      <!-- Messages List -->
+      <section id="messages-list">
+        <% if(tipi.messages) { %> <% tipi.messages.forEach((message) => { %> <%-
+        include("../messages/show.ejs", {message}) %> <% }) %> <% } %>
+      </section>
+      <!-- Ends Message List -->
     </main>
 
     <% include ../static/partials/baseScripts.ejs %>

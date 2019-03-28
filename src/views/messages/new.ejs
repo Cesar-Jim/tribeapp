@@ -1,0 +1,19 @@
+<form
+  style="width:50%"
+  action="/tipis/<%= tipi.id %>/messages/create"
+  method="post"
+>
+  <div class="form-group">
+    <label for="body">New Message</label>
+    <textarea
+      class="form-control"
+      name="body"
+      aria-describedby="bodyHelp"
+      placeholder="Enter message"
+    ></textarea>
+    <small class="text-muted" id="bodyHelp"
+      >message must be 1 or more characters in length.</small
+    >
+  </div>
+  <button type="submit" class="btn btn-primary">Send</button>
+</form>

@@ -3,13 +3,10 @@
     <a class="navbar-brand" href="/">tribeapp</a>
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="/tipis">Tipis</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/">Home</a>
-        </li>
         <% if(currentUser) { %>
+        <li class="nav-item">
+          <a class="nav-link">Welcome <%= currentUser.name %>!</a>
+        </li>
         <li class="nav-item">
           <a class="nav-link" href="/users/sign_out">Sign out</a>
         </li>
@@ -21,6 +18,12 @@
           <a class="nav-link" href="/users/sign_in">Sign in</a>
         </li>
         <% }%>
+        <li class="nav-item">
+          <a class="nav-link" href="/tipis">Tipis</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/">Home</a>
+        </li>
       </ul>
     </div>
   </div>

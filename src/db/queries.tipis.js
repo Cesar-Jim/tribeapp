@@ -1,4 +1,6 @@
 const Tipi = require("./models").Tipi;
+const Message = require("./models").Message;
+const User = require("./models").User;
 
 module.exports = {
   getAllTipis(callback) {
@@ -26,7 +28,15 @@ module.exports = {
   },
 
   getTipi(id, callback) {
-    return Tipi.findById(id)
+    return Tipi.findById(id, {
+      include: [
+        {
+          model: Message,
+          as: "messages",
+          include: [{ model: User }]
+        }
+      ]
+    })
       .then(tipi => {
         callback(null, tipi);
       })
