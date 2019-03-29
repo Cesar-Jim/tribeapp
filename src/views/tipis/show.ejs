@@ -11,6 +11,7 @@
 
       <p class="lead-description">(<%= tipi.description %>)</p>
 
+      <% if(currentUser) { %>
       <a href="/tipis/<%= tipi.id %>/edit" class="btn btn-warning editTipi-btn">Edit Tipi</a>
 
       <form
@@ -20,6 +21,7 @@
       >
         <button type="submit" class="btn btn-danger closeTipi-btn">Close Tipi</button>
       </form>
+      <% } %>
 
       
 
