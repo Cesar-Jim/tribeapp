@@ -4,21 +4,37 @@
     <% include ../static/partials/head.ejs %>
   </head>
   <body>
-    <main class="container">
+    <main class="container tipisList-block">
       <% include ../static/partials/navbar.ejs %>
 
-      <h1>Active Tipis</h1>
-      <% if(currentUser) { %>
-      <a href="/tipis/new" class="btn btn-primary">New Tipi</a>
-      <% } %>
+      <h1 class="tipisList-header">Active Tipis</h1>
 
-      <ul class="list-group">
-        <% tipis.forEach((tipi) => { %>
-        <li class="list-group-item">
-          <a href="/tipis/<%= tipi.id %>"> <%= tipi.name %> </a>
-        </li>
-        <% }) %>
-      </ul>
+      <div class="card" style="width: 32rem;">
+        <img src="../../images/tipi.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <p class="card-text">
+            Note: A Tipi is a chat room that specializes in one specific topic
+            or discussion. When joining a Tipi, discuss only about that single
+            topic the Tipi is about. ENJOY!
+          </p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <% let j=1 %> <% tipis.forEach((tipi) => { %>
+          <li class="list-group-item">
+            <a href="/tipis/<%= tipi.id %>" class="tipiName">
+              <span class="badge badge-light"><%= j %>.</span> <%= tipi.name %>
+              <% j++ %>
+            </a>
+          </li>
+          <% }) %>
+        </ul>
+      </div>
+
+      <div class="createTipi-btn">
+        <% if(currentUser) { %>
+        <a href="/tipis/new" class="btn btn-primary newTipi-btn">New Tipi</a>
+        <% } %>
+      </div>
     </main>
   </body>
 </html>

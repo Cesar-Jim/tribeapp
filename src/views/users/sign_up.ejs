@@ -6,12 +6,12 @@
   <body>
     <% include ../static/partials/navbar.ejs %>
 
-    <main class="container">
+    <main class="container signUp-block">
       <% include ../static/partials/messages.ejs %>
 
-      <h1>Sign up</h1>
+      <h1 class="signUp-header">Join Us!</h1>
 
-      <form action="/users" method="post">
+      <form action="/users" method="post" class="sign-up-form">
         <div class="form-group">
           <label for="name">Name</label>
           <input
@@ -65,7 +65,9 @@
           />
         </div>
 
-        <button type="submit" class="btn btn-primary">Sign up</button>
+        <button type="submit" class="btn btn-primary signUp-btn">
+          Sign up
+        </button>
       </form>
     </main>
 

@@ -8,13 +8,22 @@
     <% include ./partials/navbar.ejs %>
 
     <!-- Page Content -->
-    <main class="container">
+    <main class="container-body">
       <% include ../static/partials/messages.ejs %>
       <!-- Jumbotron Header -->
-      <header class="jumbotron my-4">
-        <h1 class="display-3">tribeapp</h1>
-        <p class="lead">Create your clan groups and chat!</p>
-        <a href="/users/sign_up" class="btn btn-primary btn-lg">Sign up</a>
+      <header class="jumbotron my-4 text-jumbo">
+        <p class="lead">
+          Create Tipis & Chat!
+        </p>
+        <img
+          src="../../images/carpet.png"
+          height="65"
+          alt="carpet"
+          id="carpet"
+        />
+        <a href="/users/sign_up" class="btn btn-primary btn-lg sign-up-btn"
+          >Sign up</a
+        >
       </header>
     </main>
     <!-- /.container -->

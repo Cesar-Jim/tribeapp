@@ -1,3 +1,391 @@
-body {
-  padding-top: 54px;
+/* ***** FONTS ***** */
+@import url("https://fonts.googleapis.com/css?family=Skranji:400,700");
+/* ***** END FONTS ***** */
+
+/* ***** NAVBAR STYLES ***** */
+.navbar {
+  background-color: #009688 !important;
+  height: 80px;
 }
+
+.text-brand {
+  display: flex;
+  font-size: 1.8rem;
+}
+
+.text-links {
+  font-size: 1.15rem;
+}
+
+#logo {
+  margin-right: 15px;
+}
+/* ***** NAVBAR END ***** */
+
+/* ***** BODY STYLES ***** */
+
+.jumbotron {
+  margin-top: 82px !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.lead {
+  padding: 10px 0px 10px 0px;
+  font-family: "Skranji", cursive;
+  font-size: 4rem;
+  color: #f15e3dd0;
+  text-align: center;
+  -webkit-filter: drop-shadow(3px 3px 3px #222);
+  filter: drop-shadow(1px 1px 1px #222);
+}
+
+#carpet {
+  align-self: center;
+  width: 625px;
+  background-repeat: repeat;
+  margin-top: -15px;
+}
+
+.sign-up-btn {
+  align-self: center;
+  margin: 100px 0px 0px 0px;
+  color: #009688;
+  background-color: #ffffff;
+  border: 2px solid #009688;
+  -webkit-filter: drop-shadow(3px 3px 3px #222);
+  filter: drop-shadow(4px 4px 4px #222);
+}
+
+.sign-up-btn:hover {
+  background-color: #009688;
+  border: 2px solid #009688;
+  color: #ffffff;
+  -webkit-transition: background-color 0.3s ease-out;
+  -moz-transition: background-color 0.3s ease-out;
+  -o-transition: background-color 0.3s ease-out;
+  transition: background-color 0.3s ease-out;
+  -webkit-filter: drop-shadow(3px 3px 3px #222);
+  filter: drop-shadow(2px 2px 2px #222);
+}
+/* ***** BODY END ***** */
+
+/* ***** SIGN-UP STYLES ***** */
+.signUp-block {
+  margin-top: 82px;
+  padding-top: 50px;
+}
+
+.signUp-header {
+  font-family: "Skranji", cursive;
+  font-size: 4rem;
+  color: #f15e3dd0;
+  -webkit-filter: drop-shadow(3px 3px 3px #222);
+  filter: drop-shadow(1px 1px 1px #222);
+}
+
+.sign-up-form {
+  margin-top: 30px;
+}
+
+.signUp-btn {
+  margin: 20px 0px 0px 0px;
+  color: #009688;
+  background-color: #ffffff;
+  border: 2px solid #009688;
+  -webkit-filter: drop-shadow(3px 3px 3px #222);
+  filter: drop-shadow(4px 4px 4px #222);
+}
+
+.signUp-btn:hover {
+  background-color: #009688;
+  border: 2px solid #009688;
+  color: #ffffff;
+  -webkit-transition: background-color 0.3s ease-out;
+  -moz-transition: background-color 0.3s ease-out;
+  -o-transition: background-color 0.3s ease-out;
+  transition: background-color 0.3s ease-out;
+  -webkit-filter: drop-shadow(3px 3px 3px #222);
+  filter: drop-shadow(2px 2px 2px #222);
+}
+/* ***** SIGN-UP END ***** */
+
+/* ***** SIGN-IN STYLES ***** */
+.signIn-block {
+  margin-top: 82px;
+  padding-top: 50px;
+}
+
+.signIn-header {
+  font-family: "Skranji", cursive;
+  font-size: 4rem;
+  color: #f15e3dd0;
+  -webkit-filter: drop-shadow(3px 3px 3px #222);
+  filter: drop-shadow(1px 1px 1px #222);
+}
+
+.sign-in-form {
+  margin-top: 30px;
+}
+
+.signIn-btn {
+  margin: 20px 0px 0px 0px;
+  color: #009688;
+  background-color: #ffffff;
+  border: 2px solid #009688;
+  -webkit-filter: drop-shadow(3px 3px 3px #222);
+  filter: drop-shadow(4px 4px 4px #222);
+}
+
+.signIn-btn:hover {
+  background-color: #009688;
+  border: 2px solid #009688;
+  color: #ffffff;
+  -webkit-transition: background-color 0.3s ease-out;
+  -moz-transition: background-color 0.3s ease-out;
+  -o-transition: background-color 0.3s ease-out;
+  transition: background-color 0.3s ease-out;
+  -webkit-filter: drop-shadow(3px 3px 3px #222);
+  filter: drop-shadow(2px 2px 2px #222);
+}
+/* ***** SIGN-IN END ***** */
+
+/* ***** TIPIS STYLES ***** */
+
+.tipisList-block {
+  margin-top: 82px;
+  padding-top: 50px;
+}
+
+.tipisList-header {
+  font-family: "Skranji", cursive;
+  font-size: 4rem;
+  color: #f15e3dd0;
+  -webkit-filter: drop-shadow(3px 3px 3px #222);
+  filter: drop-shadow(1px 1px 1px #222);
+  text-align: center;
+}
+
+.tipis-list {
+  margin-top: 50px;
+}
+
+.createTipi-btn {
+  text-align: center;
+}
+
+.newTipi-btn {
+  margin: 20px 0px 100px 0px;
+  color: #009688;
+  background-color: #ffffff;
+  border: 2px solid #009688;
+  -webkit-filter: drop-shadow(3px 3px 3px #222);
+  filter: drop-shadow(4px 4px 4px #222);
+}
+
+.newTipi-btn:hover {
+  background-color: #009688;
+  border: 2px solid #009688;
+  color: #ffffff;
+  -webkit-transition: background-color 0.3s ease-out;
+  -moz-transition: background-color 0.3s ease-out;
+  -o-transition: background-color 0.3s ease-out;
+  transition: background-color 0.3s ease-out;
+  -webkit-filter: drop-shadow(3px 3px 3px #222);
+  filter: drop-shadow(2px 2px 2px #222);
+}
+
+.tipiName {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #009688;
+}
+
+.tipiName:hover {
+  text-decoration: none;
+  color: #f15e3dd0;
+  -webkit-transition: background-color 2s ease-out;
+  -moz-transition: background-color 2s ease-out;
+  -o-transition: background-color 2s ease-out;
+  transition: background-color 2s ease-out;
+}
+
+.badge-light {
+  font-size: 1rem;
+  color: #f15e3dd0;
+}
+
+.tipiImage {
+  width: 100% \9;
+}
+
+.card {
+  margin: 50px auto 25px auto;
+  -webkit-filter: drop-shadow(3px 3px 3px rgb(128, 128, 128));
+  filter: drop-shadow(16px 16px 16px rgb(202, 202, 202));
+}
+
+.card-text {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #383838d0;
+}
+/* ***** TIPIS END ***** */
+
+/* ***** NEW TIPI STYLES ***** */
+.newTipi-block {
+  margin-top: 82px;
+  padding-top: 50px;
+}
+
+.newTipi-header {
+  font-family: "Skranji", cursive;
+  font-size: 4rem;
+  color: #f15e3dd0;
+  -webkit-filter: drop-shadow(3px 3px 3px #222);
+  filter: drop-shadow(1px 1px 1px #222);
+  text-align: center;
+}
+
+.aNewTipi-btn {
+  margin: 20px 0px 100px 0px;
+  color: #009688;
+  background-color: #ffffff;
+  border: 2px solid #009688;
+  -webkit-filter: drop-shadow(3px 3px 3px #222);
+  filter: drop-shadow(4px 4px 4px #222);
+}
+
+.aNewTipi-btn:hover {
+  background-color: #009688;
+  border: 2px solid #009688;
+  color: #ffffff;
+  -webkit-transition: background-color 0.3s ease-out;
+  -moz-transition: background-color 0.3s ease-out;
+  -o-transition: background-color 0.3s ease-out;
+  transition: background-color 0.3s ease-out;
+  -webkit-filter: drop-shadow(3px 3px 3px #222);
+  filter: drop-shadow(2px 2px 2px #222);
+}
+/* ***** NEW TIPI END ***** */
+
+/* ***** SHOW TIPI STYLES ***** */
+.showTipi-block {
+  margin-top: 82px;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.showTipi-header {
+  font-family: "Skranji", cursive;
+  font-size: 4rem;
+  color: #f15e3dd0;
+  -webkit-filter: drop-shadow(3px 3px 3px #222);
+  filter: drop-shadow(1px 1px 1px #222);
+  text-align: center;
+}
+
+.lead-description {
+  font-size: 1.8rem;
+  color: #009688;
+  text-align: center;
+}
+
+#messages-list {
+  background: url(../images/tribeapp-board.jpg);
+  padding: 25px 0px 50px 0px;
+  margin: 25px 0px 0px 0px;
+  border: 1px solid #d8cfc6;
+  border-radius: 5px;
+  -webkit-filter: drop-shadow(3px 3px 3px rgb(128, 128, 128));
+  filter: drop-shadow(16px 16px 16px rgb(202, 202, 202));
+}
+
+.test {
+  border-top: 1px solid black !important;
+}
+
+#messages-form {
+  padding: 50px 0px 0px 0px;
+}
+
+.newMessageForm {
+  -webkit-filter: drop-shadow(3px 3px 3px rgb(128, 128, 128));
+  filter: drop-shadow(8px 8px 8px rgb(202, 202, 202));
+}
+
+.editTipi-btn {
+  margin: 20px 20px 0px 20px;
+  color: #009688;
+  background-color: #ffffff;
+  border: 2px solid #009688;
+  -webkit-filter: drop-shadow(3px 3px 3px #222);
+  filter: drop-shadow(4px 4px 4px #222);
+}
+
+.editTipi-btn:hover,
+.closeTipi-btn:hover {
+  -webkit-filter: drop-shadow(3px 3px 3px #222);
+  filter: drop-shadow(2px 2px 2px #222);
+}
+
+.closeTipi-btn {
+  margin: 20px 20px 0px 20px;
+  color: #009688;
+  background-color: #ffffff;
+  border: 2px solid #009688;
+  -webkit-filter: drop-shadow(3px 3px 3px #222);
+  filter: drop-shadow(4px 4px 4px #222);
+}
+
+.sendMessage-btn {
+  margin: 20px 0px 100px 0px;
+  color: #009688;
+  background-color: #ffffff;
+  border: 2px solid #009688;
+  -webkit-filter: drop-shadow(3px 3px 3px #222);
+  filter: drop-shadow(4px 4px 4px #222);
+}
+
+.sendMessage-btn:hover {
+  background-color: #009688;
+  border: 2px solid #009688;
+  color: #ffffff;
+  -webkit-transition: background-color 0.3s ease-out;
+  -moz-transition: background-color 0.3s ease-out;
+  -o-transition: background-color 0.3s ease-out;
+  transition: background-color 0.3s ease-out;
+  -webkit-filter: drop-shadow(3px 3px 3px #222);
+  filter: drop-shadow(2px 2px 2px #222);
+}
+
+/*Talk Bubbles*/
+.speech-bubble {
+  position: relative;
+  background: #f15e3dd0;
+  border-radius: 0.4em;
+  padding: 5px;
+}
+
+.speech-bubble:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: 1.031em solid transparent;
+  border-bottom-color: #f15e3dd0;
+  border-top: 0;
+  border-right: 0;
+  margin-left: -0.516em;
+  margin-top: -1.031em;
+}
+
+.bubbles {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0px 0px 0px;
+}
+/* ***** SHOW TIPI END ***** */

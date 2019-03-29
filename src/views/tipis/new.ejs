@@ -6,9 +6,9 @@
   <body>
     <% include ../static/partials/navbar.ejs %>
 
-    <main class="container">
+    <main class="container newTipi-block">
       <% include ../static/partials/messages.ejs %>
-      <h1>New Tipi</h1>
+      <h1 class="newTipi-header">Create a Tipi</h1>
 
       <form action="/tipis/create" method="post">
         <div class="form-group">
@@ -36,7 +36,9 @@
             >description must be 10 or more characters in length.</small
           >
         </div>
-        <button type="submit" class="btn btn-primary">Create</button>
+        <button type="submit" class="btn btn-primary aNewTipi-btn">
+          Create
+        </button>
       </form>
     </main>
 

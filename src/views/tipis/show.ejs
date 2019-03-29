@@ -6,26 +6,22 @@
   <body>
     <% include ../static/partials/navbar.ejs %>
 
-    <main class="container">
-      <h1><%= tipi.name %></h1>
+    <main class="container showTipi-block">
+      <h1 class="showTipi-header">Tipi Name: <%= tipi.name %></h1>
 
-      <p><%= tipi.description %></p>
+      <p class="lead-description">(<%= tipi.description %>)</p>
 
-      <a href="/tipis/<%= tipi.id %>/edit" class="btn btn-warning">Edit</a>
+      <a href="/tipis/<%= tipi.id %>/edit" class="btn btn-warning editTipi-btn">Edit Tipi</a>
 
       <form
         style="display:initial"
         action="/tipis/<%= tipi.id %>/destroy"
         method="post"
       >
-        <button type="submit" class="btn btn-danger">Delete</button>
+        <button type="submit" class="btn btn-danger closeTipi-btn">Close Tipi</button>
       </form>
 
-      <!-- Message Form -->
-      <section id="message-form">
-        <% if(currentUser) { %> <% include ../messages/new.ejs %> <% } %>
-      </section>
-      <!-- Ends Message Form -->
+      
 
       <!-- Messages List -->
       <section id="messages-list">
@@ -33,6 +29,12 @@
         include("../messages/show.ejs", {message}) %> <% }) %> <% } %>
       </section>
       <!-- Ends Message List -->
+
+      <!-- Message Form -->
+      <section id="messages-form"></section>
+      <% if(currentUser) { %> <% include ../messages/new.ejs %> <% } %>
+    </section>
+      <!-- Ends Message Form -->
     </main>
 
     <% include ../static/partials/baseScripts.ejs %>
