@@ -77,7 +77,7 @@ match completely in both scenarios, development and production, Heroku will redi
 
 ---
 
-## What am I have done differently?
+## What I have done differently?
 
 1. Used Sass preprocessor to streamline styling
 2. Explore a solution using react for the frontend development
