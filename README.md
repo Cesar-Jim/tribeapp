@@ -86,14 +86,15 @@ match completely in both scenarios, development and production, Heroku will redi
 
 ## Next Steps and Future Goals
 
-1. Send a confirmation email to users with the Sendgrid package
-2. Creation of private "Tipis" for premium users
-3. Include some animations for a more appealing interface
-4. Include a modal to confirm the deletion of Tipis
-5. Premium users can delete messages
-6. Show "..." when someone is typing a message
-7. Add a button for mobile users
-8. Add a favicon for the browser tab
+1. Real time synchronization using Socket.io
+2. Send a confirmation email to users with the Sendgrid package
+3. Creation of private "Tipis" for premium users
+4. Include some animations for a more appealing interface
+5. Include a modal to confirm the deletion of Tipis
+6. Premium users can delete messages
+7. Show "..." when someone is typing a message
+8. Add a button for mobile users
+9. Add a favicon for the browser tab
 
 ---
 
